@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="bg-cyan-100 w-11/12 mt-10 mb-10 ml-10 flex items-center header_style">
+            <div>
+                <h1 class="font-bold">Interactive</h1>
+                <p class="font-thin">Geometry Genius</p>
+            </div>
+            <div>
+                <button id="btn-blog" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Blog</button>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <!-- Section 1 -->
+<section>
+    
+    <div class="flex">
+
+        <div id="triangle" class="border-2 h-80 w-72 ml-3">
+            <img class="h-28  mt-10 mx-auto" src="images/triangle.png" alt="">
+            <h1 class="text-center font-bold">Triangle</h1>
+            <p class="text-center">Area (A) = 0.5 X <span id="base-total">b</span> X <span id="height-total">h</span></p>
+            <input id="tri-base-field" class="border border-sky-400 w-11 ml-24 mt-2" type="text" placeholder="   b">
+            <input id="tri-height-field" class="border border-sky-400 w-11" type="text" placeholder="   h">
+            <button id="btn-tri-cal" class="block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-60 mx-auto">
+                Calculate
+              </button>
+
+        </div>
+        <div class="border-2 h-80 w-72 ml-3">
+            <img class="h-28  mt-10 mx-auto" src="images/rectangle.png" alt="">
+            <h1 class="text-center font-bold">Rectangle</h1>
+            <p class="text-center">Area (A) = <span id="w-total">w</span> X <span id="l-total">l</span></p>
+            <input id="rec-w-field" class="border border-sky-400 w-11 ml-24 mt-2" type="text" placeholder="   w">
+            <input id="rec-l-field" class="border border-sky-400 w-11" type="text" placeholder="   l">
+            <button id="btn-rec-cal" class="block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-60 mx-auto">
+                Calculate
+              </button>
+
+        </div>
+        <div class="border-2 h-80 w-72 ml-3">
+            <img class="h-28  mt-10 mx-auto" src="images/parallelogram.png" alt="">
+            <h1 class="text-center font-bold">Parallelogram</h1>
+            <p class="text-center">Area (A) = b X h</p>
+            <h1 class="text-center" >b=10cm, h=12cm</h1>
+            <button class="block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-60 mx-auto">
+                Calculate
+              </button>
+
+        </div>
+        <div class="border-2 h-80 w-80 ml-3">
+            <h1 class="underline underline-offset-1 text-center font-semibold">Area Calculation</h1>
+            
+            <!-- Triangle -->
+            <div class="flex mt-3 items-center">
+                <h1 class="">1. Triangle</h1>
+                <h1 class="ml-2"> <span id="tri-area-calc">00</span> cm<sup>2</sup></h1>
+                <button id="convert-1" class="block ml-12 mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-13 h-15 mx-auto">
+                    Convert to m<sup>2</sup>
+                  </button>
+            </div>
+            <!-- Rectangle -->
+            <div class="flex mt-3 items-center">
+                <h1 class="mx-auto">2. Rectangle</h1>
+                <h1><span id="rec-area-calc">00</span> cm<sup>2</sup></h1>
+                <button id="convert-2" class="block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-13 h-10 mx-auto">
+                    Convert to m<sup>2</sup>
+                  </button>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- Section 2 -->
+
+<section>
+    
+    <div class="flex mt-2">
+
+        <div class="border-2 h-80 w-72 ml-3">
+            <img class="h-28  mt-10 mx-auto" src="images/rhombus.png" alt="">
+            <h1 class="text-center font-bold">Rhombus</h1>
+            <p class="text-center">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+            <h1 class="text-center" >d<sub>1</sub> =16, d<sub>2</sub>=8cm</h1>
+            <button class="block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-60 mx-auto">
+                Calculate
+              </button>
+
+        </div>
+        <div class="border-2 h-80 w-72 ml-3">
+            <img class="h-28  mt-10 mx-auto" src="images/pentagon.png" alt="">
+            <h1 class="text-center font-bold">Pentagon</h1>
+            <p class="text-center">Area (A) = 0.5 X p X b</p>
+            <h1 class="text-center" >p = 6cm, b = 10cm</h1>
+            <button class="block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-60 mx-auto">
+                Calculate
+              </button>
+
+        </div>
+        <div class="border-2 h-80 w-72 ml-3">
+            <img class="h-28  mt-10 mx-auto" src="images/ellipse.png" alt="">
+            <h1 class="text-center font-bold">Ellipse</h1>
+            <p class="text-center">Area (A) = 𝛑 X a X b  </p>
+            <h1 class="text-center" >a = 10cm, b = 4cm</h1>
+            <button class="block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-60 mx-auto">
+                Calculate
+              </button>
+
+        </div>
+        
+        
+    </div>
+</section>
+
+</main>
+
+
+
+<script src="js/blog.js"></script>
+<script src="js/triangle.js"></script>
+<script src="js/rectangle.js"></script>
+<script src="js/converter.js"></script>
+</body>
+</html>
